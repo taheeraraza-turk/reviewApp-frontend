@@ -1,0 +1,75 @@
+/* Container for products list (vertical list) */
+.products-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #f9fafb;
+  min-height: 80vh;
+}
+
+/* Individual product card */
+.product-card {
+  display: flex;
+  gap: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Product image */
+.product-image {
+  width: 180px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Product info */
+.product-info {
+  padding: 15px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 1rem; /* Smaller font */
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.product-description {
+  flex-grow: 1;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.product-price {
+  font-size: 1rem; /* Smaller font */
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* Remove underline and blue color from any link inside product-title */
+.product-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-title a:hover {
+  text-decoration: none;
+}
