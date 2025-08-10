@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://review-app-backend-delta.vercel.app/'; // adjust if needed
+const API_URL = 'https://review-app-backend-delta.vercel.app'; // adjust if needed
 
 // Get reviews for product (public)
 export const fetchReviews = async (productId) => {
