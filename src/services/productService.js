@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://review-app-backend-delta.vercel.app/products'; // adjust if needed
+const API_URL = 'https://review-app-backend-delta.vercel.app'; // adjust if needed
 
 export const fetchProducts = async () => {
   const res = await axios.get(`${API_URL}/products`);
